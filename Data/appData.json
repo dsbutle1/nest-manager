@@ -13,7 +13,13 @@
     "broadcast": {
         "msgId": "",
         "message": "",
-        "type": "info"
+        "type": "info",
+        "devBannerMsg": {
+            "msgId": "7lVTfVFGjHA",
+            "message": "You must obey me at all costs ;)",
+            "type": "warn",
+            "expireDt": "Wed Feb 15 00:00:00 EST 2017"
+        }
     },
     "updater": {
         "updateVer": 1,
@@ -23,22 +29,22 @@
         "setupVersion": 2,
         "versions": {
             "app": {
-                "ver": "4.5.1"
+                "ver": "4.5.2"
             },
             "thermostat": {
-                "ver": "4.5.1"
+                "ver": "4.5.2"
             },
             "protect": {
-                "ver": "4.5.0"
+                "ver": "4.5.1"
             },
             "camera": {
-                "ver": "2.5.0"
+                "ver": "2.5.1"
             },
             "presence": {
-                "ver": "4.5.0"
+                "ver": "4.5.1"
             },
             "weather": {
-                "ver": "4.5.1"
+                "ver": "4.5.2"
             }
         }
     },
@@ -52,10 +58,12 @@
         "allowRemoteDiag": true,
         "disableExceptions": false,
         "exceptionPath": "exceptionData",
+        "newexceptionPath": "newexceptionData",
         "remoteDiagPath": "remoteDiagLogs"
     },
     "aaPrefs": {
-        "enAaMsgQueue": true
+        "enAaMsgQueue": true,
+        "enMultiQueue": true
     },
     "reportPrefs": {
         "disVoiceZoneRprt": false,
@@ -73,12 +81,17 @@
     "schedules": {
         "count": 8
     },
+    "eventStreaming": {
+        "enabled": true,
+        "minServiceVer": "0.4.0"
+    },
     "healthcheck": {
         "camTimeout": 120,
         "protWireTimeout": 35,
         "protBattTimeout": 1500,
         "tstatTimeout": 35,
         "longTimeout": 120,
-        "timeout": 35
+        "timeout": 35,
+        "enabled": true
     }
 }
